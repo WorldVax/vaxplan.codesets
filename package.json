@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/worldvax/cdsi.refdata.git"
+    "url": "git+ssh://git@github.com/worldvax/worldvax.cdsi.refdata.git#master"
   },
   "keywords": [
     "cdsi",
@@ -17,7 +17,7 @@
   "author": "Dennis Dunn <ansofive@gmail.com> (http://worldvax.org)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/worldvax/cdsi.refdata/issues"
+    "url": "https://github.com/worldvax/worldvax.cdsi.refdata/issues"
   },
-  "homepage": "https://github.com/worldvax/cdsi.refdata#readme"
+  "homepage": "https://worldvax.github.io"
 }
