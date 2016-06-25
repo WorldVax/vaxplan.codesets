@@ -1,0 +1,23 @@
+{
+  "name": "worldvax.cdsi.refdata",
+  "version": "0.0.1",
+  "description": "CDSi reference data from the CDC, Atalanta, GA",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/worldvax/cdsi.refdata.git"
+  },
+  "keywords": [
+    "cdsi",
+    "vaccine"
+  ],
+  "author": "Dennis Dunn <ansofive@gmail.com> (http://worldvax.org)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/worldvax/cdsi.refdata/issues"
+  },
+  "homepage": "https://github.com/worldvax/cdsi.refdata#readme"
+}
