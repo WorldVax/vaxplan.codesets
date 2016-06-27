@@ -6,83 +6,51 @@
  
 module.exports = [{
 	"VaccineGroup" : "MMR",
-	"Antigen" : "Measles",
-	"CdsiDatasetId" : "Feb-2013",
-	"Type" : "Cdsi.Model.VaccineGroupToAntigenMap"
+	"Antigen" : "Measles"
 }, {
 	"VaccineGroup" : "MMR",
-	"Antigen" : "Mumps",
-	"CdsiDatasetId" : "Feb-2013",
-	"Type" : "Cdsi.Model.VaccineGroupToAntigenMap"
+	"Antigen" : "Mumps"
 }, {
 	"VaccineGroup" : "MMR",
-	"Antigen" : "Rubella",
-	"CdsiDatasetId" : "Feb-2013",
-	"Type" : "Cdsi.Model.VaccineGroupToAntigenMap"
+	"Antigen" : "Rubella"
 }, {
 	"VaccineGroup" : "DTaP/Tdap/Td",
-	"Antigen" : "Diphtheria",
-	"CdsiDatasetId" : "Feb-2013",
-	"Type" : "Cdsi.Model.VaccineGroupToAntigenMap"
+	"Antigen" : "Diphtheria"
 }, {
 	"VaccineGroup" : "DTaP/Tdap/Td",
-	"Antigen" : "Tetanus",
-	"CdsiDatasetId" : "Feb-2013",
-	"Type" : "Cdsi.Model.VaccineGroupToAntigenMap"
+	"Antigen" : "Tetanus"
 }, {
 	"VaccineGroup" : "DTaP/Tdap/Td",
-	"Antigen" : "Pertussis",
-	"CdsiDatasetId" : "Feb-2013",
-	"Type" : "Cdsi.Model.VaccineGroupToAntigenMap"
+	"Antigen" : "Pertussis"
 }, {
 	"VaccineGroup" : "HepA",
-	"Antigen" : "Hep A",
-	"CdsiDatasetId" : "Feb-2013",
-	"Type" : "Cdsi.Model.VaccineGroupToAntigenMap"
+	"Antigen" : "Hep A"
 }, {
 	"VaccineGroup" : "HepB",
-	"Antigen" : "Hep B",
-	"CdsiDatasetId" : "Feb-2013",
-	"Type" : "Cdsi.Model.VaccineGroupToAntigenMap"
+	"Antigen" : "Hep B"
 }, {
 	"VaccineGroup" : "Hib",
-	"Antigen" : "Hib",
-	"CdsiDatasetId" : "Feb-2013",
-	"Type" : "Cdsi.Model.VaccineGroupToAntigenMap"
+	"Antigen" : "Hib"
 }, {
 	"VaccineGroup" : "HPV",
-	"Antigen" : "HPV",
-	"CdsiDatasetId" : "Feb-2013",
-	"Type" : "Cdsi.Model.VaccineGroupToAntigenMap"
+	"Antigen" : "HPV"
 }, {
 	"VaccineGroup" : "Influenza",
-	"Antigen" : "Influenza",
-	"CdsiDatasetId" : "Feb-2013",
-	"Type" : "Cdsi.Model.VaccineGroupToAntigenMap"
+	"Antigen" : "Influenza"
 }, {
 	"VaccineGroup" : "MCV",
-	"Antigen" : "MCV",
-	"CdsiDatasetId" : "Feb-2013",
-	"Type" : "Cdsi.Model.VaccineGroupToAntigenMap"
+	"Antigen" : "MCV"
 }, {
 	"VaccineGroup" : "PCV",
-	"Antigen" : "PCV",
-	"CdsiDatasetId" : "Feb-2013",
-	"Type" : "Cdsi.Model.VaccineGroupToAntigenMap"
+	"Antigen" : "PCV"
 }, {
 	"VaccineGroup" : "Polio",
-	"Antigen" : "Polio",
-	"CdsiDatasetId" : "Feb-2013",
-	"Type" : "Cdsi.Model.VaccineGroupToAntigenMap"
+	"Antigen" : "Polio"
 }, {
 	"VaccineGroup" : "Rotavirus",
-	"Antigen" : "Rotavirus",
-	"CdsiDatasetId" : "Feb-2013",
-	"Type" : "Cdsi.Model.VaccineGroupToAntigenMap"
+	"Antigen" : "Rotavirus"
 }, {
 	"VaccineGroup" : "Varicella",
-	"Antigen" : "Varicella",
-	"CdsiDatasetId" : "Feb-2013",
-	"Type" : "Cdsi.Model.VaccineGroupToAntigenMap"
+	"Antigen" : "Varicella"
 }
 ];

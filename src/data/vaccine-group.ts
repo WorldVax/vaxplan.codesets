@@ -6,62 +6,38 @@
 
 module.exports =[{
 	"Name" : "MMR",
-	"AdministerFullVaccineGroup" : "Yes",
-	"CdsiDatasetId" : "Feb-2013",
-	"Type" : "Cdsi.Model.VaccineGroup"
+	"AdministerFullVaccineGroup" : "Yes"
 }, {
 	"Name" : "DTaP/Tdap/Td",
-	"AdministerFullVaccineGroup" : "No",
-	"CdsiDatasetId" : "Feb-2013",
-	"Type" : "Cdsi.Model.VaccineGroup"
+	"AdministerFullVaccineGroup" : "No"
 }, {
 	"Name" : "HepA",
-	"AdministerFullVaccineGroup" : "n/a",
-	"CdsiDatasetId" : "Feb-2013",
-	"Type" : "Cdsi.Model.VaccineGroup"
+	"AdministerFullVaccineGroup" : "n/a"
 }, {
 	"Name" : "HepB",
-	"AdministerFullVaccineGroup" : "n/a",
-	"CdsiDatasetId" : "Feb-2013",
-	"Type" : "Cdsi.Model.VaccineGroup"
+	"AdministerFullVaccineGroup" : "n/a"
 }, {
 	"Name" : "Hib",
-	"AdministerFullVaccineGroup" : "n/a",
-	"CdsiDatasetId" : "Feb-2013",
-	"Type" : "Cdsi.Model.VaccineGroup"
+	"AdministerFullVaccineGroup" : "n/a"
 }, {
 	"Name" : "HPV",
-	"AdministerFullVaccineGroup" : "n/a",
-	"CdsiDatasetId" : "Feb-2013",
-	"Type" : "Cdsi.Model.VaccineGroup"
+	"AdministerFullVaccineGroup" : "n/a"
 }, {
 	"Name" : "Influenza",
-	"AdministerFullVaccineGroup" : "n/a",
-	"CdsiDatasetId" : "Feb-2013",
-	"Type" : "Cdsi.Model.VaccineGroup"
+	"AdministerFullVaccineGroup" : "n/a"
 }, {
 	"Name" : "MCV",
-	"AdministerFullVaccineGroup" : "n/a",
-	"CdsiDatasetId" : "Feb-2013",
-	"Type" : "Cdsi.Model.VaccineGroup"
+	"AdministerFullVaccineGroup" : "n/a"
 }, {
 	"Name" : "PCV",
-	"AdministerFullVaccineGroup" : "n/a",
-	"CdsiDatasetId" : "Feb-2013",
-	"Type" : "Cdsi.Model.VaccineGroup"
+	"AdministerFullVaccineGroup" : "n/a"
 }, {
 	"Name" : "Polio",
-	"AdministerFullVaccineGroup" : "n/a",
-	"CdsiDatasetId" : "Feb-2013",
-	"Type" : "Cdsi.Model.VaccineGroup"
+	"AdministerFullVaccineGroup" : "n/a"
 }, {
 	"Name" : "Rotavirus",
-	"AdministerFullVaccineGroup" : "n/a",
-	"CdsiDatasetId" : "Feb-2013",
-	"Type" : "Cdsi.Model.VaccineGroup"
+	"AdministerFullVaccineGroup" : "n/a"
 }, {
 	"Name" : "Varicella",
-	"AdministerFullVaccineGroup" : "n/a",
-	"CdsiDatasetId" : "Feb-2013",
-	"Type" : "Cdsi.Model.VaccineGroup"
+	"AdministerFullVaccineGroup" : "n/a"
 }];

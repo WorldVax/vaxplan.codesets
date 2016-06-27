@@ -3,8 +3,7 @@
 @author Dennis Dunn <ansofive@gmail.com>
 @license MIT
  */
-
-module.exports = [{
+export var items = [{
 	"Antigen" : "Diphtheria",
 	"ContraindicationLanguage" : "Severe allergic reaction (e.g., anaphylaxis) after previous dose or to a vaccine component",
 	"Concept" : "PHIN VS",
@@ -25,9 +24,7 @@ module.exports = [{
 		132,
 		138,
 		146
-	],
-	"CdsiDatasetId" : "Feb-2013",
-	"Type" : "Cdsi.Model.Contraindication"
+	]
 }, {
 	"Antigen" : "Tetanus",
 	"ContraindicationLanguage" : "Severe allergic reaction (e.g., anaphylaxis) after previous dose or to a vaccine component",
@@ -51,9 +48,7 @@ module.exports = [{
 		138,
 		142,
 		146
-	],
-	"CdsiDatasetId" : "Feb-2013",
-	"Type" : "Cdsi.Model.Contraindication"
+	]
 }, {
 	"Antigen" : "Pertusis",
 	"ContraindicationLanguage" : "Severe allergic reaction (e.g., anaphylaxis) after previous dose or to a vaccine component",
@@ -71,9 +66,7 @@ module.exports = [{
 		130,
 		132,
 		146
-	],
-	"CdsiDatasetId" : "Feb-2013",
-	"Type" : "Cdsi.Model.Contraindication"
+	]
 }, {
 	"Antigen" : "Pertusis",
 	"ContraindicationLanguage" : "Encephalopathy (e.g., coma, decreased level of consciousness, or prolonged seizures), not attributable to another identifiable cause, within 7 days of administration of previous dose of DTP, DTaP, or Tdap",
@@ -91,9 +84,7 @@ module.exports = [{
 		130,
 		132,
 		146
-	],
-	"CdsiDatasetId" : "Feb-2013",
-	"Type" : "Cdsi.Model.Contraindication"
+	]
 }, {
 	"Antigen" : "Measles",
 	"ContraindicationLanguage" : "Severe allergic reaction (e.g., anaphylaxis) after previous dose or to a vaccine component",
@@ -105,9 +96,7 @@ module.exports = [{
 		4,
 		5,
 		94
-	],
-	"CdsiDatasetId" : "Feb-2013",
-	"Type" : "Cdsi.Model.Contraindication"
+	]
 }, {
 	"Antigen" : "Measles",
 	"ContraindicationLanguage" : "Pregnancy",
@@ -119,9 +108,7 @@ module.exports = [{
 		4,
 		5,
 		94
-	],
-	"CdsiDatasetId" : "Feb-2013",
-	"Type" : "Cdsi.Model.Contraindication"
+	]
 }, {
 	"Antigen" : "Measles",
 	"ContraindicationLanguage" : "Known severe immunodeficiency (e.g., from hematologic and solid tumors, receipt of chemotherapy, congential immunodeficiency, or long-term immunosuppressive therapy or patients with HIV infection who are severely immunocompromised)",
@@ -133,9 +120,7 @@ module.exports = [{
 		4,
 		5,
 		94
-	],
-	"CdsiDatasetId" : "Feb-2013",
-	"Type" : "Cdsi.Model.Contraindication"
+	]
 }, {
 	"Antigen" : "Mumps",
 	"ContraindicationLanguage" : "Severe allergic reaction (e.g., anaphylaxis) after previous dose or to a vaccine component",
@@ -147,9 +132,7 @@ module.exports = [{
 		7,
 		38,
 		94
-	],
-	"CdsiDatasetId" : "Feb-2013",
-	"Type" : "Cdsi.Model.Contraindication"
+	]
 }, {
 	"Antigen" : "Mumps",
 	"ContraindicationLanguage" : "Pregnancy",
@@ -161,9 +144,7 @@ module.exports = [{
 		7,
 		38,
 		94
-	],
-	"CdsiDatasetId" : "Feb-2013",
-	"Type" : "Cdsi.Model.Contraindication"
+	]
 }, {
 	"Antigen" : "Mumps",
 	"ContraindicationLanguage" : "Known severe immunodeficiency (e.g., from hematologic and solid tumors, receipt of chemotherapy, congential immunodeficiency, or long-term immunosuppressive therapy or patients with HIV infection who are severely immunocompromised)",
@@ -175,9 +156,7 @@ module.exports = [{
 		7,
 		38,
 		94
-	],
-	"CdsiDatasetId" : "Feb-2013",
-	"Type" : "Cdsi.Model.Contraindication"
+	]
 }, {
 	"Antigen" : "Rubella",
 	"ContraindicationLanguage" : "Severe allergic reaction (e.g., anaphylaxis) after previous dose or to a vaccine component",
@@ -190,9 +169,7 @@ module.exports = [{
 		6,
 		38,
 		94
-	],
-	"CdsiDatasetId" : "Feb-2013",
-	"Type" : "Cdsi.Model.Contraindication"
+	]
 }, {
 	"Antigen" : "Rubella",
 	"ContraindicationLanguage" : "Pregnancy",
@@ -205,9 +182,7 @@ module.exports = [{
 		6,
 		38,
 		94
-	],
-	"CdsiDatasetId" : "Feb-2013",
-	"Type" : "Cdsi.Model.Contraindication"
+	]
 }, {
 	"Antigen" : "Rubella",
 	"ContraindicationLanguage" : "Known severe immunodeficiency (e.g., from hematologic and solid tumors, receipt of chemotherapy, congential immunodeficiency, or long-term immunosuppressive therapy or patients with HIV infection who are severely immunocompromised)",
@@ -220,9 +195,7 @@ module.exports = [{
 		6,
 		38,
 		94
-	],
-	"CdsiDatasetId" : "Feb-2013",
-	"Type" : "Cdsi.Model.Contraindication"
+	]
 }, {
 	"Antigen" : "Hep A",
 	"ContraindicationLanguage" : "Severe allergic reaction (e.g., anaphylaxis) after previous dose or to a vaccine component",
@@ -236,9 +209,7 @@ module.exports = [{
 		84,
 		85,
 		104
-	],
-	"CdsiDatasetId" : "Feb-2013",
-	"Type" : "Cdsi.Model.Contraindication"
+	]
 }, {
 	"Antigen" : "Hep B",
 	"ContraindicationLanguage" : "Severe allergic reaction (e.g., anaphylaxis) after previous dose or to a vaccine component",
@@ -258,9 +229,7 @@ module.exports = [{
 		110,
 		132,
 		146
-	],
-	"CdsiDatasetId" : "Feb-2013",
-	"Type" : "Cdsi.Model.Contraindication"
+	]
 }, {
 	"Antigen" : "Polio",
 	"ContraindicationLanguage" : "Severe allergic reaction (e.g., anaphylaxis) after previous dose or to a vaccine component",
@@ -276,9 +245,7 @@ module.exports = [{
 		130,
 		132,
 		146
-	],
-	"CdsiDatasetId" : "Feb-2013",
-	"Type" : "Cdsi.Model.Contraindication"
+	]
 }, {
 	"Antigen" : "MCV",
 	"ContraindicationLanguage" : "Severe allergic reaction (e.g., anaphylaxis) after previous dose or to a vaccine component",
@@ -293,9 +260,7 @@ module.exports = [{
 		136,
 		146,
 		147
-	],
-	"CdsiDatasetId" : "Feb-2013",
-	"Type" : "Cdsi.Model.Contraindication"
+	]
 }, {
 	"Antigen" : "Hib",
 	"ContraindicationLanguage" : "Severe allergic reaction (e.g., anaphylaxis) after previous dose or to a vaccine component",
@@ -315,9 +280,7 @@ module.exports = [{
 		120,
 		132,
 		146
-	],
-	"CdsiDatasetId" : "Feb-2013",
-	"Type" : "Cdsi.Model.Contraindication"
+	]
 }, {
 	"Antigen" : "HPV",
 	"ContraindicationLanguage" : "Severe allergic reaction (e.g., anaphylaxis) after previous dose or to a vaccine component",
@@ -328,9 +291,7 @@ module.exports = [{
 		62,
 		118,
 		137
-	],
-	"CdsiDatasetId" : "Feb-2013",
-	"Type" : "Cdsi.Model.Contraindication"
+	]
 }, {
 	"Antigen" : "PCV",
 	"ContraindicationLanguage" : "Severe allergic reaction (e.g., anaphylaxis) after previous dose (of PCV7, PCV13, or any diphtheria toxoid-containing vaccine) or to a component of a vaccine (PCV7, PCV13, or any diphtheria toxoid-containing vaccine)",
@@ -357,9 +318,7 @@ module.exports = [{
 		136,
 		138,
 		146
-	],
-	"CdsiDatasetId" : "Feb-2013",
-	"Type" : "Cdsi.Model.Contraindication"
+	]
 }, {
 	"Antigen" : "Rotavirus",
 	"ContraindicationLanguage" : "Severe allergic reaction (e.g., anaphylaxis) after previous dose or to a vaccine component",
@@ -371,9 +330,7 @@ module.exports = [{
 		116,
 		119,
 		122
-	],
-	"CdsiDatasetId" : "Feb-2013",
-	"Type" : "Cdsi.Model.Contraindication"
+	]
 }, {
 	"Antigen" : "Rotavirus",
 	"ContraindicationLanguage" : "Severe combined immunodeficiency (SCID)",
@@ -385,9 +342,7 @@ module.exports = [{
 		116,
 		119,
 		122
-	],
-	"CdsiDatasetId" : "Feb-2013",
-	"Type" : "Cdsi.Model.Contraindication"
+	]
 }, {
 	"Antigen" : "Rotavirus",
 	"ContraindicationLanguage" : "Severe (anaphylactic) allergy to latex",
@@ -396,9 +351,7 @@ module.exports = [{
 	"ConceptText" : "Latex allergy (disorder)",
 	"CvxList" : [
 		119
-	],
-	"CdsiDatasetId" : "Feb-2013",
-	"Type" : "Cdsi.Model.Contraindication"
+	]
 }, {
 	"Antigen" : "Varicella",
 	"ContraindicationLanguage" : "Severe allergic reaction (e.g., anaphylaxis) after previous dose or to a vaccine component",
@@ -408,9 +361,7 @@ module.exports = [{
 	"CvxList" : [
 		21,
 		94
-	],
-	"CdsiDatasetId" : "Feb-2013",
-	"Type" : "Cdsi.Model.Contraindication"
+	]
 }, {
 	"Antigen" : "Varicella",
 	"ContraindicationLanguage" : "Known severe immunodeficiency (e.g., from hematologic and solid tumors, receipt of chemotherapy, congential immunodeficiency, or long-term immunosuppressive therapy or patients with HIV infection who are severely immunocompromised)",
@@ -420,9 +371,7 @@ module.exports = [{
 	"CvxList" : [
 		21,
 		94
-	],
-	"CdsiDatasetId" : "Feb-2013",
-	"Type" : "Cdsi.Model.Contraindication"
+	]
 }, {
 	"Antigen" : "Varicella",
 	"ContraindicationLanguage" : "Pregnancy",
@@ -432,9 +381,7 @@ module.exports = [{
 	"CvxList" : [
 		21,
 		94
-	],
-	"CdsiDatasetId" : "Feb-2013",
-	"Type" : "Cdsi.Model.Contraindication"
+	]
 }, {
 	"Antigen" : "Influenza",
 	"ContraindicationLanguage" : "Severe allergic reaction (e.g., anaphylaxis) after previous dose or to a vaccine component",
@@ -450,9 +397,7 @@ module.exports = [{
 		140,
 		141,
 		144
-	],
-	"CdsiDatasetId" : "Feb-2013",
-	"Type" : "Cdsi.Model.Contraindication"
+	]
 }, {
 	"Antigen" : "Influenza",
 	"ContraindicationLanguage" : "Allergy to eggs",
@@ -468,9 +413,7 @@ module.exports = [{
 		140,
 		141,
 		144
-	],
-	"CdsiDatasetId" : "Feb-2013",
-	"Type" : "Cdsi.Model.Contraindication"
+	]
 }, {
 	"Antigen" : "Influenza",
 	"ContraindicationLanguage" : "Pregnancy",
@@ -479,9 +422,7 @@ module.exports = [{
 	"ConceptText" : "Patient currently pregnant (finding)",
 	"CvxList" : [
 		111
-	],
-	"CdsiDatasetId" : "Feb-2013",
-	"Type" : "Cdsi.Model.Contraindication"
+	]
 }, {
 	"Antigen" : "Influenza",
 	"ContraindicationLanguage" : "Immunosuppression",
@@ -490,7 +431,5 @@ module.exports = [{
 	"ConceptText" : "immunodeficiency due to any cause, including HIV (hematologic and solid tumors, congenital immunodeficiency, long-term immunosuppressive therapy, including steroids)",
 	"CvxList" : [
 		111
-	],
-	"CdsiDatasetId" : "Feb-2013",
-	"Type" : "Cdsi.Model.Contraindication"
+	]
 }];
