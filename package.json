@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/worldvax/worldvax.cdsi.refdata/issues"
   },
-  "homepage": "https://worldvax.github.io"
+  "homepage": "https://worldvax.github.io",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
 }
