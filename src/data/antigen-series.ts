@@ -3,8 +3,7 @@
 @author Dennis Dunn <ansofive@gmail.com>
 @license MIT
  */
-export default items;
-var items = [{
+export default [{
 	"Name" : "Diphtheria",
 	"StandardSeriesCollection" : [{
 			"SeriesName" : "Diphtheria Standard Series",

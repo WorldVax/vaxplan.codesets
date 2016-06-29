@@ -3,8 +3,7 @@
 @author Dennis Dunn <ansofive@gmail.com>
 @license MIT
  */
-export default items;
-var items = [{
+export default [{
 	"PreviousVaccineType" : {
 		"Name" : "MMR",
 		"CvxCode" : 3

@@ -3,8 +3,7 @@
 @author Dennis Dunn <ansofive@gmail.com>
 @license MIT
  */
-export default items;
-var items = [{
+export default [{
 	"Antigen" : "Diphtheria",
 	"ContraindicationLanguage" : "Severe allergic reaction (e.g., anaphylaxis) after previous dose or to a vaccine component",
 	"Concept" : "PHIN VS",

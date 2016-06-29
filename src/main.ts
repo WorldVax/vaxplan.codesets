@@ -1,4 +1,4 @@
-﻿let a = import("data/antigen-series")
+﻿import items from "./data/antigen-series";
 
 
 /**

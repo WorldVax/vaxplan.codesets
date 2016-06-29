@@ -3,8 +3,7 @@
 @author Dennis Dunn <ansofive@gmail.com>
 @license MIT
  */
-export default items;
-var items = [{
+export default [{
 	"CvxCode" : 1,
 	"ShortDescription" : "DTP",
 	"Antigen" : "Diphtheria"
