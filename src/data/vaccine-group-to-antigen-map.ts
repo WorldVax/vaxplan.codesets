@@ -3,8 +3,8 @@
 @author Dennis Dunn <ansofive@gmail.com>
 @license MIT
  */
- 
-module.exports = [{
+export default items;
+var items = [{
 	"VaccineGroup" : "MMR",
 	"Antigen" : "Measles"
 }, {
