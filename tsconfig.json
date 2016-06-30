@@ -1,0 +1,13 @@
+{
+	"compilerOptions": {
+		"declaration": true,
+		"module": "commonjs",
+		"target": "es5",
+		"noImplicitAny": false,
+		"outDir": "lib"
+	},
+	"files": [
+		"src/main.ts",
+		"src/data/contraindications.ts"
+	]
+}
