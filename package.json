@@ -2,15 +2,15 @@
   "name": "worldvax.cdsi.refdata",
   "version": "0.0.1",
   "description": "CDSi reference data from the CDC, Atalanta, GA",
-  "main":"dist/main.js",
-  "scripts": {   
+  "main": "dist/index.js",
+  "scripts": {
     "preinstall": "npm install autodts",
     "postinstall": "autodts link",
-    "prepublish": "tsc && autodts generate",
+    "build": "tsc  && autodts generate",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "typescript": {
-    "definition": "main.d.ts"
+    "definition": "index.d.ts"
   },
   "repository": {
     "type": "git",
@@ -28,10 +28,6 @@
   "homepage": "https://worldvax.github.io",
   "devDependencies": {
     "gulp": "^3.9.1",
-<<<<<<< HEAD
-    "jasmine": "^2.4.1",
-    "karma": "^1.1.0"
-=======
     "gulp-tslint": "^5.0.0",
     "gulp-typescript": "^2.13.6",
     "gulp-typings": "^2.0.0",
@@ -39,6 +35,8 @@
     "karma": "^1.1.0",
     "tslint": "^3.12.1",
     "typescript": "^1.8.10"
->>>>>>> bc5416f53eb5067f9162eb47e9bdf33d23f8ae6f
+  },
+  "dependencies": {
+    "autodts": "0.0.6"
   }
 }
