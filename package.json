@@ -7,7 +7,8 @@
     "preinstall": "npm install autodts",
     "postinstall": "autodts link",
     "build": "tsc && autodts generate",
-    "build-release": "npm run build && npm pack",
+    "build-release": "npm run generate && npm run build && npm pack",
+    "generate": "node generate.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "typescript": {
