@@ -11,18 +11,12 @@ var fs = require('fs'),
 
 
 function main() {
-    var jsond = __dirname + '/data/json';
-    fs.stat(jsond, function(err, stats){
-        if(err){
-            fs.mkdirSync(jsond);
-        }
-    });
-    glob(__dirname + '/data/xml/*.xml', function (err, files) {
+    glob(__dirname + '/data/*.xml', function (err, files) {
         files.forEach(function (file) {
             convert(file);
         });
 
-        glob(jsond + '/' + cruft + '*.json', function (err, files) {
+        glob(__dirname + '/' + cruft + '*.json', function (err, files) {
             var series = {};
             files.forEach(function (file) {
                 var basename = path.basename(file, '.json');
@@ -32,7 +26,7 @@ function main() {
                 series[basename] = adjusted['antigenSupportingData'];
                 fs.unlinkSync(file);
             });
-            fs.writeFileSync(jsond + '/AntigenSeries.json', JSON.stringify(series, '', 4));
+            fs.writeFileSync(__dirname + '/AntigenSeries.json', JSON.stringify(series, '', 4));
         });
     });
 };
@@ -45,7 +39,7 @@ function convert(filename) {
     var data = fs.readFileSync(filename);
     var parser = new xml.Parser();
     parser.parseString(data, function (err, result) {
-        fs.writeFileSync(__dirname + '/data/json/' + basename + '.json', JSON.stringify(result, '', 4));
+        fs.writeFileSync(__dirname + '/' + basename + '.json', JSON.stringify(result, '', 4));
     });
 };
 

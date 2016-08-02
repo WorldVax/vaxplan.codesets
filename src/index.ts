@@ -1,7 +1,7 @@
 ﻿declare var require: any;
 
-var codesets:any = require("./data/json/ScheduleSupportingData");
-var antigens:any = require("./data/json/AntigenSeries");
+var codesets:any = require("./ScheduleSupportingData");
+var antigens:any = require("./AntigenSeries");
 
 export class LookupTable {
     private items: any[];
