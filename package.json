@@ -1,7 +1,7 @@
 {
   "name": "vaxplan.refdata",
-  "version": "1.0.0",
-  "description": "CDSi reference data from the CDC, Atalanta, GA. This codeset was originally published by the CDC Feb-2013.",
+  "version": "2.0.0",
+  "description": "CDSi reference data from the CDC, Atalanta, GA. This codeset was originally published by the CDC Apr-2016 as Version 2.3 20160401.",
   "main": "dist/index.js",
   "scripts": {
     "preinstall": "npm install autodts",
