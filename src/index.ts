@@ -1,4 +1,7 @@
-﻿import * as codesets from "./codesets"
+﻿declare var require: any;
+
+var codesets:any = require("./data/json/ScheduleSupportingData");
+var antigens:any = require("./data/json/AntigenSeries");
 
 export class LookupTable {
     private items: any[];

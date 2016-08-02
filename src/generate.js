@@ -29,7 +29,7 @@ function main() {
                 basename = basename.replace(cruft, '');
                 var obj = require(file);
                 var adjusted = adjust(obj);
-                series[basename] = adjusted;
+                series[basename] = adjusted['antigenSupportingData'];
                 fs.unlinkSync(file);
             });
             fs.writeFileSync(jsond + '/AntigenSeries.json', JSON.stringify(series, '', 4));
