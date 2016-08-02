@@ -15,4 +15,4 @@ dist/
 *.tgz
 
 .vscode/
-json/
+src/data/json/
