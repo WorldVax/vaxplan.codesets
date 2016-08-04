@@ -2,21 +2,22 @@
  * Transform the xml files to json.
  */
 
-var cruft = 'AntigenSupportingData- ';
-
 var fs = require('fs'),
     xml = require('xml2js'),
     path = require('path'),
     glob = require('glob');
 
+var cruft = 'AntigenSupportingData- ';
+var outdir = __dirname + "/../dist/";
+var datasrc = __dirname + "/data/*.xml";
 
 function main() {
-    glob(__dirname + '/data/*.xml', function (err, files) {
+    glob(datasrc, function (err, files) {
         files.forEach(function (file) {
             convert(file);
         });
 
-        glob(__dirname + '/' + cruft + '*.json', function (err, files) {
+        glob(outdir + cruft + '*.json', function (err, files) {
             var series = {};
             files.forEach(function (file) {
                 var basename = path.basename(file, '.json');
@@ -26,8 +27,13 @@ function main() {
                 series[basename] = adjusted['antigenSupportingData'];
                 fs.unlinkSync(file);
             });
-            fs.writeFileSync(__dirname + '/AntigenSeries.json', JSON.stringify(series, '', 4));
+            fs.writeFileSync(outdir + 'AntigenSeries.json', JSON.stringify(series, '', 4));
         });
+
+        var fname = outdir + 'ScheduleSupportingData.json';
+        var obj = require(fname);
+        obj = adjust(obj);
+        fs.writeFileSync(fname, JSON.stringify(obj, '', 4));
     });
 };
 
@@ -39,7 +45,7 @@ function convert(filename) {
     var data = fs.readFileSync(filename);
     var parser = new xml.Parser();
     parser.parseString(data, function (err, result) {
-        fs.writeFileSync(__dirname + '/' + basename + '.json', JSON.stringify(result, '', 4));
+        fs.writeFileSync(outdir + basename + '.json', JSON.stringify(result, '', 4));
     });
 };
 
