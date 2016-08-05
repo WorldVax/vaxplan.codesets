@@ -20,7 +20,4 @@ export class LookupTable {
     }
 }
 
-module RefData {
-    var Antigens = new LookupTable(antigens, (table: any, key: string) => table[key], (table) => Object.keys(table));
-}
-
+export = new LookupTable(antigens, (table: any, key: string) => table[key], (table) => Object.keys(table));
