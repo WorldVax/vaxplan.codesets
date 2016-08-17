@@ -31,9 +31,32 @@ function makelists(data:any, name :string) : any
     });
     return lut;
 }
+function makeLv(data) {
+    var items = data.map((item) => {return {
+        "previous":item["previous"][0],
+        "current":item["current"][0],
+        "conflictBeginInterval": item["conflictBeginInterval"],
+        "minConflictEndInterval":item["minConflictEndInterval"],
+        "conflictEndInterval":item["conflictEndInterval"] 
+    };});
+    items.forEach((item)=>{
+        item.previous.cvx = "_"+item.previous.cvx;
+        item.current.cvx = "_"+item.current.cvx;
+    });
+    
+    let lut = Object.create(items);
+    let keys = items.map((item)=>{return item.current.cvx;});
+    keys = keys.filter((val, i, arr) => {return (i <= arr.indexOf(val));});
+    keys.forEach((key) =>{
+        let contra = items.filter((item)=> {return item.previous.cvx== key;});
+        Object.defineProperty(lut, key, {"value":contra, "enumerable":true});
+    });
+
+    return lut;
+}
 
 export let Antigens = make(antigens, null);
-//export let LiveVirusConflicts = makelists(codesets.scheduleSupportingData.liveVirusConflicts[0].liveVirusConflict, (item) => {return item["current"][0]["vaccineType"];});
+export let LiveVirusConflicts = makeLv(codesets.scheduleSupportingData.liveVirusConflicts[0].liveVirusConflict);
 export let Contraindications = makelists(codesets.scheduleSupportingData.contraindications[0].contraindication, "antigen");
 export let VaccineGroups = make(codesets.scheduleSupportingData.vaccineGroups[0].vaccineGroup, (item) => {return item["name"];});
 export let VaccineGroupToAntigenMap = make(codesets.scheduleSupportingData.vaccineGroupToAntigenMap[0].vaccineGroupMap, (item) => {return item["name"];});
