@@ -8,7 +8,7 @@ var fs = require('fs'),
     glob = require('glob');
 
 var cruft = 'AntigenSupportingData- ';
-var outdir = __dirname + "/../dist/";
+var outdir = __dirname + "/../lib/";
 var datasrc = __dirname + "/data/*.xml";
 
 function main() {
