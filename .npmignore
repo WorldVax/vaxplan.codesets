@@ -7,3 +7,4 @@ spec/
 
 !index.d.ts
 !index.ref.d.ts
+!LookupTableFactory.d.ts
