@@ -1,13 +1,18 @@
 {
   "name": "vaxplan.refdata",
-  "version": "1.0.0",
-  "description": "CDSi reference data from the CDC, Atalanta, GA. This codeset was originally published by the CDC Feb-2013.",
-  "main": "dist/index.js",
+  "version": "2.0.0",
+  "description": "CDSi reference data from the CDC, Atalanta, GA. This codeset was originally published by the CDC Apr-2016 as Version 2.3 20160401.",
+  "main": "lib/index.js",
   "scripts": {
     "preinstall": "npm install autodts",
     "postinstall": "autodts link",
+    "preBuild": "npm run generate",
     "build": "tsc && autodts generate",
-    "build-release": "npm run build && npm pack",
+    "prebuild:rel": "npm run clean",
+    "build:rel": "npm run build",
+    "postbuild:rel": "npm pack",
+    "generate": "node src/generate.js",
+    "clean": "rm dist/*",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "typescript": {
@@ -28,6 +33,8 @@
   },
   "homepage": "https://worldvax.github.io",
   "devDependencies": {
+    "autodts": "0.0.6",
+    "glob": "^7.0.5",
     "gulp": "^3.9.1",
     "gulp-tslint": "^5.0.0",
     "gulp-typescript": "^2.13.6",
@@ -35,7 +42,8 @@
     "jasmine": "^2.4.1",
     "karma": "^1.1.0",
     "tslint": "^3.12.1",
-    "typescript": "^1.8.10"
+    "typescript": "^1.8.10",
+    "xml2js": "^0.4.17"
   },
   "dependencies": {
     "autodts": "0.0.6"
