@@ -10,4 +10,11 @@ Then, in your code, you can
 
 var cdsi = require('vaxplan.refdata');
 
+You will then have access to the following collections:
 
+- cdsi.Antigens
+- cdsi.LiveVirusConflicts
+- cdsi.Contraindications
+- cdsi.VaccineGroups
+- cdsi.VaccineGroupToAntigenMap
+- cdsi.CvxToAntigenMap
