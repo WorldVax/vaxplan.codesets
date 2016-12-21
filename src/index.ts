@@ -44,17 +44,17 @@ function nameAntigens(data: any) {
 
 let antigenList: any = nameAntigens(antigens);
 antigenList = lutFactory.ToList(antigenList);
-export let Antigens = lutFactory.New(antigenList, 'antigen');
+export let AntigenSeriesByAntigen = lutFactory.New(antigenList, 'antigen');
 
 let lvc: any = collapseLv(codesets.scheduleSupportingData.liveVirusConflicts[0].liveVirusConflict);
 lvc = groupLiveVirus(lvc);
 lvc = lutFactory.ToList(lvc);
-export let LiveVirusConflicts = lutFactory.New(lvc, 'cvx');
+export let ConflictsByCvx = lutFactory.New(lvc, 'cvx');
 
 let ci: any = lutFactory.GroupBy(codesets.scheduleSupportingData.contraindications[0].contraindication, 'antigen');
 ci = lutFactory.ToList(ci);
-export let Contraindications = lutFactory.New(ci, 'antigen');
+export let ContraindicationsByAntigen = lutFactory.New(ci, 'antigen');
 
 export let VaccineGroups = lutFactory.New(codesets.scheduleSupportingData.vaccineGroups[0].vaccineGroup, 'name');
-export let VaccineGroupToAntigenMap = lutFactory.New(codesets.scheduleSupportingData.vaccineGroupToAntigenMap[0].vaccineGroupMap, 'name');
-export let CvxToAntigenMap = lutFactory.New(codesets.scheduleSupportingData.cvxToAntigenMap[0].cvxMap, 'cvx');
+export let AntigenSeriesByVaccineGroup = lutFactory.New(codesets.scheduleSupportingData.vaccineGroupToAntigenMap[0].vaccineGroupMap, 'name');
+export let AntigenSeriesByCvx = lutFactory.New(codesets.scheduleSupportingData.cvxToAntigenMap[0].cvxMap, 'cvx');
