@@ -7,11 +7,15 @@ is v3.2 2016-Dec.
 
 To use the package, install it into your project with npm.
 
+```
 npm install worldvax/vaxplan.refdata --save
+```
 
 Then, in your code, you can
 
+```
 var refdata = require('vaxplan.refdata');
+```
 
 You will have access to the following collections:
 
@@ -40,7 +44,7 @@ use the Object.keys() function:
 You can then use Object.keys() on one of the collections:
 
 ```
-  > Object.keys(refdata.AntigenSeriesByName)
+> Object.keys(refdata.AntigenSeriesByName)
 [ 'Diphtheria', 'HepA', 'HepB', 'Hib', 'HPV', 'Influenza', 'MCV',
   'Measles', 'Mumps', 'Pertussis', 'Pneumococcal', 'Polio', 'Rotavirus',
   'Rubella', 'Tetanus', 'Varicella', 'Zoster' ]
