@@ -1,6 +1,9 @@
 ﻿# vaxplan.refdata
 The Centers for Disease Control in Atlanta, GA publish supporting data for the CDSi Logic Spec. 
-This project makes that data available as an npm package. 
+This project makes that data available as an npm package. The current version of the supporting data
+is v3.2 2016-Dec.
+
+### Usage
 
 To use the package, install it into your project with npm.
 
@@ -19,9 +22,12 @@ You will have access to the following collections:
 - refdata.AntigenSeriesByVaccineGroup
 - refdata.AntigenSeriesByCvx
 
+### What's in the refdata?
+
 Each of these collections are indexed by string keys. To discover the keys to a collection, 
 use the Object.keys() function:
 
+```
 > Object.keys(refdata)
 [ 'AntigenSeriesByName',
   'ConflictsByCvx',
@@ -29,16 +35,20 @@ use the Object.keys() function:
   'VaccineGroups',
   'AntigenSeriesByVaccineGroup',
   'AntigenSeriesByCvx' ]
+```
 
 You can then use Object.keys() on one of the collections:
 
+```
   > Object.keys(refdata.AntigenSeriesByName)
 [ 'Diphtheria', 'HepA', 'HepB', 'Hib', 'HPV', 'Influenza', 'MCV',
   'Measles', 'Mumps', 'Pertussis', 'Pneumococcal', 'Polio', 'Rotavirus',
   'Rubella', 'Tetanus', 'Varicella', 'Zoster' ]
+```
 
 Use the keys to index into the various collections:
 
+```
 > refdata.AntigenSeriesByName['Diphtheria']
 { immunity: '',
   series:
@@ -48,16 +58,22 @@ Use the keys to index into the various collections:
        selectBest: [Object],
        seriesDose: [Object] } ],
   antigen: 'Diphtheria' }
+```
 
+```
 > refdata.AntigenSeriesByVaccineGroup['DTaP/Tdap/Td']
 { name: 'DTaP/Tdap/Td',
   antigen: [ 'Diphtheria', 'Tetanus', 'Pertussis' ] }
+```
+
+### Caveats
 
 Some collections such as AntigenSeriesByName return an object while some
 collections like ConflictsByCvx return lists of objects. Also, all keys are 
 strings which means you need to use the CVX identifier and not simply its
 numerical value.
 
+```
 > refdata['AntigenSeriesByCvx']['07']
 { cvx: '07',
   shortDescription: 'mumps',
@@ -65,4 +81,7 @@ numerical value.
    [ { antigen: 'Mumps',
        associationBeginAge: '',
        associationEndAge: '' } ] }
+```
 
+### To Do
+I would like to generate proper .d.ts files. 
