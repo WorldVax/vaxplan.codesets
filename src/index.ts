@@ -16,9 +16,9 @@ function collapseLv(data: any[]) {
         };
     });
     items.forEach((item) => {
-        item['cvx'] = '_' + item.current.cvx;
-        item.previous.cvx = '_' + item.previous.cvx;
-        item.current.cvx = '_' + item.current.cvx;
+        item['cvx'] = item.current.cvx;
+        item.previous.cvx = item.previous.cvx;
+        item.current.cvx = item.current.cvx;
     });
     return items;
 }
@@ -44,7 +44,7 @@ function nameAntigens(data: any) {
 
 let antigenList: any = nameAntigens(antigens);
 antigenList = lutFactory.ToList(antigenList);
-export let AntigenSeriesByAntigen = lutFactory.New(antigenList, 'antigen');
+export let AntigenSeriesByName = lutFactory.New(antigenList, 'antigen');
 
 let lvc: any = collapseLv(codesets.scheduleSupportingData.liveVirusConflicts[0].liveVirusConflict);
 lvc = groupLiveVirus(lvc);
